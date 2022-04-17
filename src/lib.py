@@ -17,3 +17,6 @@ def check_libs_installed()->None:
 def get_file_path(f_name:str)->str:
     abs_path:str = join(data_dir_path,'..\\data',f_name)
     return abs_path if exists(abs_path) else 'None'
+
+def get_processing_folder_path(f_name:str='')->str:
+        return join(data_dir_path,'processing',f_name)
